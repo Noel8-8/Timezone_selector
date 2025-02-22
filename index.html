@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>micromodal App</title>
+  </head>
+  <body>
+    <main>
+      <div class="content">
+        <h2 class="timezone" data-micromodal-trigger="modal-1">Europe</h2>
+        <h1 class="time">00:00:00</h1>
+        <h2 class="date">Monday 1st May 2023</h2>
+      </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+          <header class="modal__header">
+            <h2 class="modal__title" id="modal-1-title">
+              Select Timezone
+            </h2>
+          </header>
+          <main class="modal__content" id="modal-1-content">
+            <div class="searchDiv">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" class="searchBox" placeholder=" Search Timezone">
+            </div>
+            <div class="modalMenu">
+              
+            </div>
+          </main>
+          <footer class="modal__footer">
+          </footer>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
