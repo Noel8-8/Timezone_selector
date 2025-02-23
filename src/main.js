@@ -32,6 +32,7 @@ setInterval(() => {
 const timezones = moment.tz.names();
 const modalMenu = document.querySelector('.modalMenu');
 
+
 let html = timezones.map((timezone) => {
   return`
   <div class="item" data-micromodal-close>
@@ -92,4 +93,12 @@ function handleSearch(){
 }
 
 searchBox.addEventListener('input', handleSearch)
+
+// handling search icon click
+const searchIcon = document.querySelector('.searchIcon');
+searchIcon.addEventListener('click',()=>{
+  console.log('item click')
+  searchBox.focus()
+} )
+
 
